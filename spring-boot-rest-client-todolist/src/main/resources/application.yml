@@ -1,0 +1,22 @@
+# Spring Boot configuration
+spring:
+  profiles:
+    active: development
+# Logging
+logging:
+  pattern:
+    console: "%d %-5level %logger : %msg%n"
+  level:
+    org.springframework: INFO
+# Server configuration
+server:
+  port: 6161
+  sessionTimeout: 30
+# Producer URL of Core Application API
+core:
+  url: http://192.168.1.23:6060/todo/core/create
+user:
+  security:
+    default :
+      username: admin
+      password: admin
